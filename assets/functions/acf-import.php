@@ -25,6 +25,20 @@ $where_sections_are_active = array (
 			'value' => 'page',
 		),
 	),
+	array (
+		array (
+			'param' => 'post_type',
+			'operator' => '==',
+			'value' => 'person',
+		),
+	),
+	array (
+		array (
+			'param' => 'post_type',
+			'operator' => '==',
+			'value' => 'portfolio',
+		),
+	),
 /*	add any additional post types here. 
 	array (
 		array (
