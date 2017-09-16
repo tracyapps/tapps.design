@@ -7,7 +7,13 @@
 $background_choices_available = array (
 	'none' 		=> 'No background',
 	'inverse' 	=> 'Inverse',
-	'bright'	=> 'Bright background',
+	'orange'	=> 'Orange',
+	'yellow'	=> 'Yellow',
+	'green'		=> 'Green',
+	'light-blue' => 'Light Blue',
+	'bright-blue' => 'Bright Blue',
+	'slate'		=> 'Slate Blue',
+	'purple'	=> 'Purple',
 );
 
 // settings on where the 'sections' are active throughout the site
@@ -2457,20 +2463,7 @@ if( function_exists('acf_add_local_field_group') ):
 					'class' => '',
 					'id' => '',
 				),
-				'choices' => array (
-					'none' => 'No background',
-					'pattern-grey-1' => 'Grey, with large arrows',
-					'pattern-green' => 'Green',
-					'pattern-purple' => 'Purple',
-					'pattern-teal' => 'Teal',
-					'pattern-dark-blue' => 'Dark blue',
-					'pattern-orange' => 'Orange',
-					'pattern-grey-2' => 'Grey, with multi-colored lines',
-					'pattern-gold' => 'Gold',
-					'pattern-light' => 'Light',
-					'pattern-light-blue' => 'Light blue',
-					'granite-texture' => 'Granite',
-				),
+				'choices' => $background_choices_available,
 				'default_value' => array (
 					0 => 'none',
 				),
