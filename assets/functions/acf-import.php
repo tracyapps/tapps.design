@@ -5,15 +5,15 @@
 
 // change / add to the background choices here
 $background_choices_available = array (
-	'none' 		=> 'No background',
-	'inverse' 	=> 'Inverse',
-	'orange'	=> 'Orange',
-	'yellow'	=> 'Yellow',
-	'green'		=> 'Green',
-	'light-blue' => 'Light Blue',
-	'bright-blue' => 'Bright Blue',
-	'slate'		=> 'Slate Blue',
-	'purple'	=> 'Purple',
+	'bg-none' 		=> 'No background',
+	'bg-inverse' 	=> 'Inverse',
+	'bg-orange'		=> 'Orange',
+	'bg-yellow'		=> 'Yellow',
+	'bg-green'		=> 'Green',
+	'bg-light-blue' => 'Light Blue',
+	'bg-bright-blue' => 'Bright Blue',
+	'bg-slate'		=> 'Slate Blue',
+	'bg-purple'		=> 'Purple',
 );
 
 // settings on where the 'sections' are active throughout the site
