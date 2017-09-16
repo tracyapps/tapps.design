@@ -29,7 +29,14 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php
+if( is_singular() ) :
+	$page_background = get_field( 'page_background' );
+	body_class(  $page_background );
+else :
+	body_class();
+endif;
+?>>
 
 <header class="site-header" role="banner">
 	<div class="site-logo">
