@@ -87,21 +87,21 @@ blockquote {
   .hide-this svg {
     display: none; }
 
-.inverse {
+.bg-inverse {
   background: #414141;
   color: #fff; }
-  .inverse a,
-  .inverse a:visited {
+  .bg-inverse a,
+  .bg-inverse a:visited {
     color: #B3DFD8; }
-    .inverse a:hover, .inverse a:focus, .inverse a:active,
-    .inverse a:visited:hover,
-    .inverse a:visited:focus,
-    .inverse a:visited:active {
+    .bg-inverse a:hover, .bg-inverse a:focus, .bg-inverse a:active,
+    .bg-inverse a:visited:hover,
+    .bg-inverse a:visited:focus,
+    .bg-inverse a:visited:active {
       color: #F2F2F2; }
-    .inverse a.button:hover,
-    .inverse a:visited.button:hover {
+    .bg-inverse a.button:hover,
+    .bg-inverse a:visited.button:hover {
       color: #fff !important; }
-  .inverse svg {
+  .bg-inverse svg {
     fill: #fff !important; }
 
 .button,
