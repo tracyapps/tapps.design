@@ -94,6 +94,47 @@ blockquote {
 	@include inverse-colors;
 }
 
+.bg-orange {
+	@include inverse-colors;
+	background-color: $orange;
+	@include orange-gradient;
+}
+
+.bg-yellow {
+	@include default-colors;
+	background-color: $yellow;
+	@include yellow-gradient;
+}
+
+.bg-green {
+	@include default-colors;
+	background-color: $green;
+	@include green-gradient;
+}
+
+.bg-light-blue {
+	@include default-colors;
+	background-color: $light-blue;
+	@include light-blue-gradient;
+}
+
+.bg-bright-blue {
+	@include inverse-colors;
+	background-color: $blue;
+	@include medium-blue-gradient;
+}
+
+.bg-slate {
+	@include inverse-colors;
+	background-color: $slate;
+}
+
+.bg-purple {
+	@include inverse-colors;
+	background-color: $purple;
+	@include grey-purple-gradient;
+}
+
 .button,
 input[type="submit"],
 button {
@@ -198,7 +239,7 @@ h6 {
 
 // ---------------- 04. SVG backgrounds / patterns
 
-.plain-bg {
+.bg-default {
 	background: $default-background-color;
 	@include default-colors;
 }

@@ -6,6 +6,7 @@
 // change / add to the background choices here
 $background_choices_available = array (
 	'bg-none' 		=> 'No background',
+	'bg-default'	=> 'Site Default',
 	'bg-inverse' 	=> 'Inverse',
 	'bg-orange'		=> 'Orange',
 	'bg-yellow'		=> 'Yellow',
@@ -907,7 +908,11 @@ if( function_exists('acf_add_local_field_group') ):
 											'class' => '',
 											'id' => '',
 										),
-										'choices' => $background_choices_available,
+										'choices' => array (
+											'none' 	=> 'None',
+											'pattern' => 'Pattern',
+											'image' => 'Image',
+										),
 										'allow_null' => 0,
 										'other_choice' => 0,
 										'save_other_choice' => 0,
@@ -936,10 +941,7 @@ if( function_exists('acf_add_local_field_group') ):
 											'class' => '',
 											'id' => '',
 										),
-										'choices' => array (
-											'none' => 'No background',
-											'inverse' => 'Inverse',
-										),
+										'choices' => $background_choices_available,
 										'default_value' => array (
 											0 => 'none',
 										),
