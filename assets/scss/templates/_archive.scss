@@ -1,0 +1,41 @@
+.archive-list {
+	article.portfolio {
+		min-height: 99vh;
+		display: flex;
+		align-items: center;
+		-webkit-mask-image: linear-gradient(transparent 0, black 7em);
+		mask-image: linear-gradient(transparent 0, black 7em);
+		-webkit-mask-mode: luminance;
+		mask-mode: luminance;
+		margin-top: -7em;
+
+		.container {
+			display: flex;
+			align-items: center;
+		}
+
+		.featured-image {
+			width: 40%;
+			padding-right: 5%;
+
+		}
+		.article-header {
+			flex: 1;
+		}
+
+		&:first-of-type {
+			min-height: 85vh;
+		}
+
+		&:nth-child(even) {
+			.container {
+				flex-direction: row-reverse;
+
+				.featured-image {
+					padding-right: 0;
+					padding-left: 5%;
+				}
+			}
+		}
+	}
+}

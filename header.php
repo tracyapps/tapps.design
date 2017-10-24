@@ -32,7 +32,7 @@
 <body <?php
 if( is_singular() ) :
 	$page_background = get_field( 'page_background' );
-	body_class(  $page_background );
+	body_class( $page_background );
 else :
 	body_class();
 endif;
@@ -40,14 +40,12 @@ endif;
 
 <header class="site-header" role="banner">
 	<div class="site-logo">
-		
 		<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
 	</div>
 	<div class="main-navigation">
 		<div class="mobile-menu-toggle"><a href="#menu-main-navigation" id="toggle">Menu</a></div>
 		<?php start_top_nav(); ?>
 	</div>
-
 
 </header> <!-- / .site-header -->
 <div class="site-content">

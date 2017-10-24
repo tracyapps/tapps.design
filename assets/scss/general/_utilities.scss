@@ -28,6 +28,22 @@
 
 // Style mixins
 
+@mixin thin-outline {
+	&:before {
+		border-top: 1px solid rgba( $dark, 0.3 );
+		border-bottom: 1px solid rgba( $dark, 0.3 );
+		-webkit-transform: scale(1, 0);
+		transform: scale(1, 0);
+	}
+
+	&:after {
+		border-right: 1px solid rgba( $dark, 0.5 );
+		border-left: 1px solid rgba( $dark, 0.5 );
+		-webkit-transform: scale(1, 0);
+		transform: scale(1, 0);
+	}
+}
+
 @mixin button-primary(
 		$color: $button-background-color,
 		$text: $button-text-color,
@@ -38,6 +54,8 @@
 	background: transparentize( $color, 0.1 );
 	padding: $padding;
 	text-align: center;
+	font-family: $sans-serif;
+	font-size: $h6-font-size;
 	text-decoration: none;
 	color: $text !important;
 	border-radius: $border-radius;
@@ -45,7 +63,9 @@
 	border: 1px solid darken( $color, 20 );
 	text-shadow: 1px 1px 0 rgba( 0, 0, 0, 0.43 );
 	box-shadow: 0 0 3px transparentize( $color, 0.5 );
+	@include thin-outline;
 	transition: all $transition-speed ease-in-out;
+
 
 	&:hover,
 	&:focus,
@@ -139,7 +159,7 @@
 }
 
 @mixin grey-purple-gradient {
-	background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+	background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 72%, #9795d4 85%, #a2a1dc 100%);
 }
 
 @mixin dark-aqua-gradient {

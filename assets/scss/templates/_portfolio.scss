@@ -1,0 +1,129 @@
+.portfolio-intro {
+	display: flex;
+	margin: 0 2%;
+	flex-direction: row-reverse;
+
+	.portfolio-overview-text {
+		flex: 1;
+		padding-left: 3rem;
+	}
+	.portfolio-featured-image {
+		width: $golden-large;
+	}
+}
+
+.project-image {
+	position: relative;
+	box-shadow: 1px 1px 7px rgba( 0, 0, 0, 0.4 );
+
+	svg.browser-container {
+		position: relative;
+		width: 100%;
+		height: 60px;
+		margin-bottom: -9px;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+
+		&.browser-frame-no-url {
+			.browser-text {
+				.url-text {
+					display: none;
+				}
+			}
+		}
+	}
+	.browser-text {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 60px;
+		display: block;
+		z-index: 100;
+		text-shadow: none;
+		color: #444751;
+
+		a {
+			color: #444751;
+			text-decoration: none;
+		}
+
+		.title-text {
+			text-align: center;
+			margin: 3px 0 4px 0;
+			overflow: hidden;
+			white-space: nowrap;
+			font-size: 16px;
+			color: #444751;
+			text-shadow: none;
+		}
+
+		.url-text {
+			font-size: 11px;
+			margin: 9px 40px 7px 74px;
+			background: #fff;
+			padding: 3px 5px;
+			border-radius: 3px;
+		}
+	}
+
+	svg.video-container {
+		position: relative;
+		width: 100%;
+		height: 29px;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin-bottom: -7px;
+	}
+
+	&.browser-frame,
+	&.browser-frame-no-url {
+		border-radius: 6px 6px 0 0;
+
+
+		.bg-image {
+			border-bottom: 12px solid rgba(226, 226, 226, 0.75);
+		}
+	}
+
+	&.video-frame {
+		.bg-image {
+			background: #171515;
+			padding: 4px;
+			border-radius: 6px 6px 0 0;
+		}
+	}
+
+	&.photo-frame {
+		@include sunset-gradient;
+		padding: 1px;
+		border: 7px solid $white;
+		transform: rotate(-0.8deg);
+
+		&:before {
+			content: '';
+			@include grey-purple-gradient;
+			position: absolute;
+			pointer-events: none;
+			top: 1px;
+			bottom: 1px;
+			left: 1px;
+			right: 1px;
+			transform: rotate(3.85deg);
+			border: 7px solid $white;
+			box-shadow: 1px 1px 7px rgba( 0, 0, 0, 0.4 );
+		}
+
+		.bg-image {
+			background: $white;
+			padding: 7px;
+			transform: rotate(1.6deg);
+			box-shadow: 1px 1px 7px rgba( 0, 0, 0, 0.4 );
+		}
+	}
+
+}
