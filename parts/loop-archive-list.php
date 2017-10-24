@@ -4,7 +4,6 @@
  */
 
 $page_background = get_field( 'page_background' );
-$frame_option = esc_html( get_field( 'featured_image_frame' ) );
 ?>
 
 
@@ -14,7 +13,7 @@ $frame_option = esc_html( get_field( 'featured_image_frame' ) );
 		<section class="featured-image" itemprop="articleBody">
 			<?php the_post_thumbnail( 'full' ); ?>
 		</section> <!-- end article section -->
-		<header class="article-header <?php echo $frame_option; ?>">
+		<header class="article-header">
 			<h3 class="title">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 			</h3>

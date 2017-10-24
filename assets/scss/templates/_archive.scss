@@ -1,3 +1,10 @@
+.post-type-archive-portfolio {
+	.page-title {
+		span.smaller {
+			display: none;
+		}
+	}
+}
 .archive-list {
 	article.portfolio {
 		min-height: 99vh;
@@ -8,23 +15,46 @@
 		-webkit-mask-mode: luminance;
 		mask-mode: luminance;
 		margin-top: -7em;
+		padding: 5rem 0;
+
+		&.bg-none {
+			background-color: $default-background-color;
+		}
 
 		.container {
 			display: flex;
 			align-items: center;
+			position: relative;
 		}
 
 		.featured-image {
-			width: 40%;
+			width: 50%;
 			padding-right: 5%;
+			//position: relative;
 
+			.project-image {
+				//position: relative;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}
 		}
 		.article-header {
 			flex: 1;
+
+			.title {
+				span.portfolio-subtitle {
+					display: block;
+					font-size: 50%;
+				}
+			}
 		}
 
 		&:first-of-type {
 			min-height: 85vh;
+			margin-top: 0;
 		}
 
 		&:nth-child(even) {

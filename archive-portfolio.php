@@ -15,7 +15,7 @@
 					echo '<secton class="archive-list">';
 					while ( have_posts() ) : the_post(); ?>
 
-						<?php get_template_part( 'parts/loop', 'archive-list' ); ?>
+						<?php get_template_part( 'parts/loop', 'portfolio-list' ); ?>
 
 
 				<?php endwhile; ?>

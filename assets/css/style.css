@@ -1023,6 +1023,9 @@ footer.site-footer {
       .page-children-grid .child-page-box .child-page-link:hover {
         transform: scale(1.1); }
 
+.post-type-archive-portfolio .page-title span.smaller {
+  display: none; }
+
 .archive-list article.portfolio {
   min-height: 99vh;
   display: -ms-flexbox;
@@ -1033,20 +1036,31 @@ footer.site-footer {
   mask-image: linear-gradient(transparent 0, black 7em);
   -webkit-mask-mode: luminance;
   mask-mode: luminance;
-  margin-top: -7em; }
+  margin-top: -7em;
+  padding: 5rem 0; }
+  .archive-list article.portfolio.bg-none {
+    background-color: #F2F2F2; }
   .archive-list article.portfolio .container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
   .archive-list article.portfolio .featured-image {
-    width: 40%;
+    width: 50%;
     padding-right: 5%; }
+    .archive-list article.portfolio .featured-image img {
+      width: 100%;
+      height: auto; }
   .archive-list article.portfolio .article-header {
     -ms-flex: 1;
     flex: 1; }
+    .archive-list article.portfolio .article-header .title span.portfolio-subtitle {
+      display: block;
+      font-size: 50%; }
   .archive-list article.portfolio:first-of-type {
-    min-height: 85vh; }
+    min-height: 85vh;
+    margin-top: 0; }
   .archive-list article.portfolio:nth-child(even) .container {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
