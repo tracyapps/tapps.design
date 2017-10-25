@@ -30,10 +30,9 @@
 		.featured-image {
 			width: 50%;
 			padding-right: 5%;
-			//position: relative;
 
 			.project-image {
-				//position: relative;
+
 			}
 
 			img {
@@ -47,7 +46,9 @@
 			.title {
 				span.portfolio-subtitle {
 					display: block;
-					font-size: 50%;
+					font-size: 40%;
+					font-weight: 400;
+					opacity: 0.85;
 				}
 			}
 		}

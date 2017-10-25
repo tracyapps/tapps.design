@@ -53,10 +53,10 @@
 
 		.title-text {
 			text-align: center;
-			margin: 3px 0 4px 0;
+			margin: 7px 0 4px 0;
 			overflow: hidden;
 			white-space: nowrap;
-			font-size: 16px;
+			font-size: 13px;
 			color: #444751;
 			text-shadow: none;
 		}
@@ -83,6 +83,7 @@
 	&.browser-frame,
 	&.browser-frame-no-url {
 		border-radius: 6px 6px 0 0;
+		font-family: arial, sans-serif;
 
 
 		.bg-image {

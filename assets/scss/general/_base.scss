@@ -52,14 +52,14 @@ body {
 a {
 	color: $default-link-color;
 	text-decoration-skip: ink;
-	text-decoration-color: rgba( $default-link-color, 0.3 );
+	text-decoration-color: rgba( $light-blue, 0.5 );
 	transition: all $button-transition-speed ease-in-out;
 
 	&:hover,
 	&:focus,
 	&:active {
 		color: $default-link-color-hover;
-		text-decoration-color: rgba( $default-link-color, 0.4 );
+		text-decoration-color: rgba( $default-link-color, 0.5 );
 	}
 }
 
@@ -97,28 +97,29 @@ blockquote {
 
 .bg-inverse {
 	@include inverse-colors;
-	text-shadow: 0 0 10px rgba( 0, 0, 0, 0.7 );
+	@include inverse-gradient;
+	//text-shadow: 0 0 10px rgba( 0, 0, 0, 0.7 );
 }
 
 .bg-orange {
 	@include inverse-colors;
 	background-color: $orange;
 	@include orange-gradient;
-	text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
+	//text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
 }
 
 .bg-yellow {
 	@include default-colors;
 	background-color: $yellow;
 	@include yellow-gradient;
-	text-shadow: 0 0 10px rgba( 255, 255, 255, 0.8 );
+	//text-shadow: 0 0 10px rgba( 255, 255, 255, 0.8 );
 }
 
 .bg-green {
 	@include default-colors;
 	background-color: $green;
 	@include green-gradient;
-	text-shadow: 0 0 10px rgba( 255, 255, 255, 0.8 );
+	//text-shadow: 0 0 10px rgba( 255, 255, 255, 0.8 );
 }
 
 .bg-light-blue {
@@ -131,20 +132,20 @@ blockquote {
 	@include inverse-colors;
 	background-color: $blue;
 	@include medium-blue-gradient;
-	text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
+	//text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
 }
 
 .bg-slate {
 	@include inverse-colors;
 	background-color: $slate;
-	text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
+	//text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
 }
 
 .bg-purple {
 	@include inverse-colors;
 	background-color: $purple;
 	@include grey-purple-gradient;
-	text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
+	//text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
 }
 
 .button,
