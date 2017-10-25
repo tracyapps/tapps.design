@@ -16,11 +16,11 @@ $dark:  #414141;
 $gold:	#e1c43b;
 
 
-$orange:	#F27143;
-$yellow:	#F2C74D;
-$green: #8ad35d;
-$light-blue: #B3DFD8;
-$blue:		#478AD4;
+$orange: lighten( saturate( #e88243, 15 ), 5 );
+$yellow:	saturate( #F2C74D, 5 );
+$green: lighten( #99e25d, 7 );
+$light-blue: saturate( #abdfd3, 10 );
+$blue:		darken( saturate( #478AD4, 5 ), 10 );
 $slate:		#496C85;
 $blue-purple:#7A7CBD;
 $purple: 	#564d95;

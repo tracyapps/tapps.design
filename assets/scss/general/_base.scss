@@ -138,6 +138,7 @@ blockquote {
 .bg-slate {
 	@include inverse-colors;
 	background-color: $slate;
+	@include dark-blue-gradient;
 	//text-shadow: 0 0 10px rgba( 0, 0, 0, 0.4 );
 }
 
