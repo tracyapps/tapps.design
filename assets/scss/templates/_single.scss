@@ -13,21 +13,24 @@ header.article-header {
 .services-list {
 	margin: 0;
 	padding: 0;
-	list-style: none;
-	display: flex;
-	align-items: center;
 
 	li {
-		flex: 1;
-		//height: 100%;
-		//text-align: center;
+		display: inline-block;
+		margin: 0 3px 1rem 0;
 
-		a {
+		a,
+		a:visited {
 			background: $default-link-color;
 			color: $default-background-color;
-			height: 100%;
-			//display: block;
-			padding: 1rem;
+			padding: 0.5rem;
+			font-size: 1.5rem;
+			border-radius: 3px;
+			text-decoration: none;
+			border: 1px solid $default-link-color;
+
+			&:hover {
+				background: transparent;
+			}
 		}
 	}
 }

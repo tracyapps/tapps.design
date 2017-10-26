@@ -1180,20 +1180,22 @@ header.article-header .byline {
 
 .services-list {
   margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center; }
+  padding: 0; }
   .services-list li {
-    -ms-flex: 1;
-    flex: 1; }
-    .services-list li a {
+    display: inline-block;
+    margin: 0 3px 1rem 0; }
+    .services-list li a,
+    .services-list li a:visited {
       background: #696bb5;
       color: #F2F2F2;
-      height: 100%;
-      padding: 1rem; }
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      border-radius: 3px;
+      text-decoration: none;
+      border: 1px solid #696bb5; }
+      .services-list li a:hover,
+      .services-list li a:visited:hover {
+        background: transparent; }
 
 #respond h3 {
   font-size: 3rem; }
