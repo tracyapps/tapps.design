@@ -71,17 +71,17 @@
 	&:focus,
 	&:visited:hover {
 		background: $color-hover;
-		color: $text-hover !important;;
+		color: $text-hover !important;
 	}
 }
 
 
 @mixin inverse-colors(
-		$background: $inverse-background-color,
+		//$background: $inverse-background-color,
 		$text: $inverse-text-color,
 		$link: $inverse-link-color,
 		$link-hover: $inverse-link-color-hover ) {
-	background: $background;
+	//background: $background;
 	color: $text;
 	a,
 	a:visited {
@@ -108,7 +108,11 @@
 }
 
 @mixin default-colors {
-	@include inverse-colors( $default-background-color, $default-text-color, $default-link-color, $default-link-color-hover );
+	@include inverse-colors(
+					//$default-background-color,
+					$default-text-color,
+					$default-link-color,
+					$default-link-color-hover );
 	text-shadow: none;
 }
 

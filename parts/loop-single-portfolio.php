@@ -6,7 +6,6 @@
 			<h3 class="portfolio-subtitle"><?php the_field( 'portfolio_subtitle' ); ?></h3>
 		</header> <!-- end article header -->
 		<div class="portfolio-summary">
-			<h6>Services Provided</h6>
 			<?php echo get_the_term_list( $post->ID, 'service', '<ul class="services-list"><li>', '</li><li>', '</li></ul>'); ?>
 
 			<?php if( get_field( 'portfolio_date_completed' ) ): ?>

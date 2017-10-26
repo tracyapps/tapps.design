@@ -28,6 +28,7 @@
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.5",
     "jshint-stylish": "^2.0.0",
-    "scut": "^1.4.0"
+    "scut": "^1.4.0",
+    "typed.js": "^2.0.6"
   }
 }

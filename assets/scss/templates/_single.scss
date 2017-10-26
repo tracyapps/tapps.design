@@ -10,6 +10,27 @@ header.article-header {
 	}
 }
 
+.services-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+
+	li {
+		flex: 1;
+		//height: 100%;
+		//text-align: center;
+
+		a {
+			background: $default-link-color;
+			color: $default-background-color;
+			height: 100%;
+			//display: block;
+			padding: 1rem;
+		}
+	}
+}
 
 //comment list
 

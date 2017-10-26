@@ -1,40 +1,76 @@
 .site-header {
-	background: $header-background-color;
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	display: flex;
+	background: rgba( $default-background-color, 0.9 );
+
+	@include tablet-down {
+		display: block;
+	}
+
+	.logged-in.admin-bar & {
+		top: 29px;
+	}
 
 	.main-navigation {
 
-		text-transform: uppercase;
+		flex: 1;
+		font-family: $sans-serif;
+		font-weight: 300;
 
 		.mobile-menu-toggle {
 			display: none;
+
+			@include tablet-down {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				background-color: rgba( $white, 0.9 );
+				box-shadow: 1px 1px 3px rgba( 0, 0, 0, 0.2 );
+				-webkit-transition: all 0.75s ease 0s;
+				-moz-transition: all 0.75s ease 0s;
+				-o-transition: all 0.75s ease 0s;
+				transition: all 0.75s ease 0s;
+
+				a {
+					width: 100%;
+					padding: 0.6em 1em;
+					color: $dark;
+
+					&:hover {
+						color: $white;
+					}
+				}
+			}
 		}
 
 		ul {
 			margin: 0;
-			padding: 0.6em 1em;
+			padding: 0.4em 1em;
 			display: flex;
 			align-items: center;
-			transition: all $button-transition-speed ease-in-out;
+			-webkit-transition: all 0.75s ease 0s;
+			-moz-transition: all 0.75s ease 0s;
+			-o-transition: all 0.75s ease 0s;
+			transition: all 0.75s ease 0s;
 
 
 			li {
 				list-style-type: none;
 				flex: 1;
 
-				a {
-					transition: all $button-transition-speed ease-in-out;
+				a:before {
+					background: $purple;
 				}
-
 			}
 
 
 		}
 		@include tablet-down {
-
-			.mobile-menu-toggle {
-				display: block;
-			}
-
 			ul {
 				flex-direction: column;
 				height: 0;
@@ -69,21 +105,80 @@
 
 		}
 		a {
+			text-decoration: none;
+			font-size: 2.2rem;
+			line-height: 1.1;
+			padding: 0.5rem 0.25rem;
+			text-align: center;
+			color: $dark;
+			display: block;
+			text-shadow: none;
+			cursor: pointer;
+			position: relative;
+			z-index: 10;
+			transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+			overflow: hidden;
+
+			&:before {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				width: 0;
+				z-index: -1;
+				content: '';
+				color: #000 !important;
+				background: $purple;
+				transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				height: 0;
+				left: 50%;
+				top: 50%;
+				width: 150%;
+				z-index: -1;
+				-webkit-transition: all 0.75s ease 0s;
+				-moz-transition: all 0.75s ease 0s;
+				-o-transition: all 0.75s ease 0s;
+				transition: all 0.75s ease 0s;
+			}
 
 			&:hover {
 
+				color: $white;
+				text-shadow: 1px 1px 0 rgba( 0, 0, 0, 0.3 );
+
+				&:after {
+					height: 450%;
+				}
+
+				&:before {
+					left: 0%;
+					right: auto;
+					width: 100%;
+				}
 			}
 		}
 	}
 
 	&.smaller {
+		background: rgba( $default-background-color, 0.6 );
 
+		.main-navigation {
+
+		}
 	}
 
 }
 .site-logo {
-
-
+	h1 {
+		font-size: 2.1rem;
+		margin: 1.2rem;
+	}
 }
 
 .smaller {

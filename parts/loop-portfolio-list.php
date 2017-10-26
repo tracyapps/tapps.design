@@ -44,8 +44,9 @@ $frame_option = esc_html( get_field( 'featured_image_frame' ) );
 		</section> <!-- end article section -->
 		<header class="article-header">
 			<h3 class="title">
-				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?> <span class="portfolio-subtitle"><?php the_field( 'portfolio_subtitle' ); ?></span></a>
+				<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?> <span class="portfolio-subtitle"><?php the_field( 'portfolio_subtitle' ); ?></span></a>
 			</h3>
+			<?php echo get_the_term_list( $post->ID, 'service', '<ul class="services-list"><li>', '</li><li>', '</li></ul>'); ?>
 		</header> <!-- end article header -->
 	</div>
 
