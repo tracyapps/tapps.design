@@ -8,7 +8,7 @@ jQuery(document).ready( function($) {
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 
-		if (scroll >= 100) {
+		if (scroll >= 30) {
 			$('header.site-header').addClass('smaller');
 		} else {
 			$('header.site-header').removeClass('smaller');

@@ -6,6 +6,7 @@
 	z-index: 999;
 	display: flex;
 	background: rgba( $default-background-color, 0.9 );
+	transition: all 0.75s ease 0s;
 
 	@include tablet-down {
 		display: block;
