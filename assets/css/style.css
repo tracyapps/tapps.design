@@ -793,7 +793,7 @@ footer.site-footer {
       margin-top: 0; }
   @media (max-width: 900px) {
     .type-hero .hero {
-      min-height: 60vh;
+      min-height: 75vh;
       background-size: auto 110%;
       background-position: 65% 0%;
       background-repeat: no-repeat; }
@@ -803,7 +803,8 @@ footer.site-footer {
         float: left;
         padding: 0.5em;
         color: #414141;
-        text-shadow: none; }
+        text-shadow: none;
+        background: rgba(242, 242, 242, 0.8); }
         .type-hero .hero .hero-text-container a,
         .type-hero .hero .hero-text-container a:visited {
           color: #696bb5; }

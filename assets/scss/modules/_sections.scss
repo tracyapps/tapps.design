@@ -58,7 +58,7 @@
 		}
 
 		@include tablet-down {
-			min-height: 60vh;
+			min-height: 75vh;
 			background-size: auto 110%;
 			background-position: 65% 0%;
 			background-repeat: no-repeat;
@@ -69,6 +69,7 @@
 				float: left;
 				padding: 0.5em;
 				@include default-colors;
+				background: rgba( $default-background-color, 0.8 );
 			}
 		}
 	}
