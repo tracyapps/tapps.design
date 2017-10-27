@@ -10,6 +10,22 @@
 	.portfolio-featured-image {
 		width: $golden-large;
 	}
+
+	.single & {
+
+		@include phone-only {
+			flex-direction: column-reverse;
+			padding-bottom: 3rem;
+			padding-top: 5rem;
+
+			.portfolio-overview-text,
+			.portfolio-featured-image {
+				padding: 0;
+				flex: auto;
+				width: 100%;
+			}
+		}
+	}
 }
 
 .project-image {

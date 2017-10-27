@@ -5,3 +5,16 @@ body:not(.home) {
 }
 
 
+#content {
+	main#main {
+		p {
+			iframe {
+				max-width: 100% !important;
+				width: 95vw;
+				height: calc( 95vw * 0.55 );
+				margin: 1rem auto;
+				padding: 0;
+			}
+		}
+	}
+}

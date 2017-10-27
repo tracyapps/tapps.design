@@ -679,6 +679,13 @@ input[type="submit"] {
 body:not(.home) main#main {
   padding-top: 7rem; }
 
+#content main#main p iframe {
+  max-width: 100% !important;
+  width: 95vw;
+  height: calc( 95vw * 0.55);
+  margin: 1rem auto;
+  padding: 0; }
+
 footer.site-footer {
   background: #496C85;
   padding: 2rem 0;
@@ -1351,6 +1358,18 @@ span.pulled-left {
     padding-left: 3rem; }
   .portfolio-intro .portfolio-featured-image {
     width: 63.8%; }
+  @media (max-width: 600px) {
+    .single .portfolio-intro {
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      padding-bottom: 3rem;
+      padding-top: 5rem; }
+      .single .portfolio-intro .portfolio-overview-text,
+      .single .portfolio-intro .portfolio-featured-image {
+        padding: 0;
+        -ms-flex: auto;
+        flex: auto;
+        width: 100%; } }
 
 .project-image {
   position: relative;
