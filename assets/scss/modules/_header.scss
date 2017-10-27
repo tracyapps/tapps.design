@@ -158,7 +158,7 @@
 				}
 
 				&:before {
-					left: 0%;
+					left: 0;
 					right: auto;
 					width: 100%;
 				}
@@ -177,6 +177,7 @@
 }
 .site-logo {
 	h1 {
+		@include default-colors;
 		font-size: 2.1rem;
 		margin: 1.2rem;
 	}

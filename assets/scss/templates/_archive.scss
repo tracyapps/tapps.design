@@ -7,7 +7,7 @@
 }
 .archive-list {
 	article.portfolio {
-		min-height: 99vh;
+		min-height: 90vh;
 		display: flex;
 		align-items: center;
 		-webkit-mask-image: linear-gradient(transparent 0, black 7em);
@@ -15,7 +15,7 @@
 		-webkit-mask-mode: luminance;
 		mask-mode: luminance;
 		margin-top: -7em;
-		padding: 7rem 0;
+		padding: 2rem 0 7rem 0;
 
 		@include phone-only {
 			// min-height: 30vh;
@@ -85,8 +85,8 @@
 		}
 
 		&:first-of-type {
-			min-height: 85vh;
-			margin-top: 0;
+			min-height: 73vh;
+			margin-top: -5rem;
 			padding-top: 0;
 		}
 

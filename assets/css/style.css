@@ -647,19 +647,37 @@ input[type="submit"] {
         .site-header .main-navigation a:hover:after {
           height: 450%; }
         .site-header .main-navigation a:hover:before {
-          left: 0%;
+          left: 0;
           right: auto;
           width: 100%; }
   .site-header.smaller {
     background: rgba(242, 242, 242, 0.6); }
 
 .site-logo h1 {
+  color: #414141;
+  text-shadow: none;
   font-size: 2.1rem;
   margin: 1.2rem; }
+  .site-logo h1 a,
+  .site-logo h1 a:visited {
+    color: #696bb5; }
+    .site-logo h1 a:hover, .site-logo h1 a:focus, .site-logo h1 a:active,
+    .site-logo h1 a:visited:hover,
+    .site-logo h1 a:visited:focus,
+    .site-logo h1 a:visited:active {
+      color: #564d95; }
+    .site-logo h1 a.button:hover,
+    .site-logo h1 a:visited.button:hover {
+      color: #414141 !important; }
+  .site-logo h1 svg {
+    fill: #414141 !important; }
 
 @media (min-width: 900px) {
   .home .site-header .main-navigation ul {
     background-color: rgba(255, 255, 255, 0); } }
+
+body:not(.home) main#main {
+  padding-top: 7rem; }
 
 footer.site-footer {
   background: #496C85;
@@ -728,8 +746,10 @@ footer.site-footer {
 .section-title {
   margin: 0;
   text-align: center;
-  padding: 8rem 10px 0 10px;
+  padding: 8rem 10px 1rem 10px;
   line-height: 1.2; }
+  section.page-section:first-of-type .section-title {
+    padding-top: 1rem; }
   .type-none .section-title {
     margin: 0;
     padding: 4rem 10px; }
@@ -1061,8 +1081,7 @@ footer.site-footer {
   text-align: center;
   position: relative;
   overflow: hidden;
-  margin: 1em 0 0 0;
-  padding-top: 3rem;
+  margin: 3rem 0;
   line-height: 1.2;
   font-size: 4em;
   letter-spacing: -1px; }
@@ -1133,7 +1152,7 @@ footer.site-footer {
   display: none; }
 
 .archive-list article.portfolio {
-  min-height: 99vh;
+  min-height: 90vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1143,7 +1162,7 @@ footer.site-footer {
   -webkit-mask-mode: luminance;
   mask-mode: luminance;
   margin-top: -7em;
-  padding: 7rem 0; }
+  padding: 2rem 0 7rem 0; }
   .archive-list article.portfolio.bg-none {
     background-color: #F2F2F2; }
   .archive-list article.portfolio .container {
@@ -1201,8 +1220,8 @@ footer.site-footer {
       font-weight: 400;
       opacity: 0.85; }
   .archive-list article.portfolio:first-of-type {
-    min-height: 85vh;
-    margin-top: 0;
+    min-height: 73vh;
+    margin-top: -5rem;
     padding-top: 0; }
   .archive-list article.portfolio:nth-child(even) .container {
     -ms-flex-direction: row-reverse;

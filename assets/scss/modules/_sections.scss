@@ -7,8 +7,12 @@
 .section-title {
 	margin: 0;
 	text-align: center;
-	padding: 8rem 10px 0 10px;
+	padding: 8rem 10px 1rem 10px;
 	line-height: 1.2;
+
+	section.page-section:first-of-type & {
+		padding-top: 1rem;
+	}
 
 	.type-none & {
 		margin: 0;
